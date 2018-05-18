@@ -39,8 +39,18 @@ cont = 140 - evento.target.value.length;
   if (cont <= 10) {
     caracteres.style.color = "pink";
   }
-  if (cont < 0) {
+  if (cont <= 0) {
     caracteres.style.color = "red";
     document.getElementById("button").disabled = true;
   }
+}
+
+var textarea = document.getElementById('comment');
+textarea.addEventListener('keydown', autosize);
+function autosize(){
+  var el = this;
+  setTimeout(function(){
+    el.style.cssText = 'height:auto; padding:0';
+    el.style.cssText = 'height:' + el.scrollHeight + 'px';
+  },0);
 }
