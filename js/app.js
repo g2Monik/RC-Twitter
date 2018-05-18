@@ -31,4 +31,16 @@ caracteres.innerHTML = cont;
 function cambiaMensaje(evento) {
 cont = 140 - evento.target.value.length;
   caracteres.innerHTML = cont;
+  caracteres.style.color = "black";
+  mensaje.style.color = "black";
+  if (cont <= 20) {
+    caracteres.style.color = "green";
+  }
+  if (cont <= 10) {
+    caracteres.style.color = "pink";
+  }
+  if (cont < 0) {
+    caracteres.style.color = "red";
+    document.getElementById("button").disabled = true;
+  }
 }
