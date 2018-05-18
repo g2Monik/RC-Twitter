@@ -1,0 +1,50 @@
+Monica Garcia [13:05]
+body {
+    background-color: #B0C4DE;
+    background-image: url("../assets/images/onepiece.jpg");
+
+}
+
+.imag1{
+    position: relative;
+    right: 40vw;
+ width: 10vw;
+ height: 7vh;
+    top: -2vh;
+}
+
+nav{
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color:#6495ED;
+    line-height: 25px;
+}
+
+nav h1 , h2{
+    position: absolute;
+    left: 45vw;
+}
+
+
+.big{
+    display: inline-block;
+    position: relative;
+    top: 10vh;
+    left: 10vw;
+    width: 40vw;
+    height: 35vh;
+    background-color:#fbf1f3;
+}
+
+.line{
+    position: relative;
+    top: 20vh;
+    left: 5vw;
+    width: 90vw;
+    height: 10vh;
+    border: 2px solid black;
+    background-color: #fbf1f3;
+}
